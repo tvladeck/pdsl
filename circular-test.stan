@@ -1,11 +1,11 @@
 parameters {
   real<lower=0> y;
-  real x;
+  real<lower=0> x;
 }
 
 model {
   // y ~ exponential(3);
-  x ~ normal(0, 1);
+  x ~ exponential(1);
   y ~ exponential(3 * x);
 }
 
