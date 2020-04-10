@@ -4,7 +4,7 @@ parameters {
 }
 
 model {
-  // y ~ exponential(3);
+  y ~ exponential(3);
   x ~ exponential(1);
   y ~ exponential(3 * x);
 }
